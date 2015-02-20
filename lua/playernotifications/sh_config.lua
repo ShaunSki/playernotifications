@@ -52,8 +52,8 @@ LeaveSoundFile = "" -- Your sound path e.g. garrysmod/garrysmod/sound. "If the u
 
 -- SteamID Config
 -- SteamID Join Config
-SteamIDJoinConfig = true -- This will show players by SteamID, e.g. instead of using above uses this. (FOR THE PLAYER STEAMID)
-SteamIDTeamColorConfig = true -- This will show players teamcolor by SteamID upon joining. E.G. TRUE means it uses SteamIDTextColor! To turn off use false. To Turn on use true.
+SteamIDJoinConfig = false -- This will show players by SteamID, e.g. instead of using above uses this. (FOR THE PLAYER STEAMID)
+SteamIDTeamColorConfig = false -- This will show players teamcolor by SteamID upon joining. E.G. TRUE means it uses SteamIDTextColor! To turn off use false. To Turn on use true.
 
 SteamIDJoin = "STEAM_0:0:27660669" -- The player names SteamID (Need this for it to work). If you want multiple then just ask me. or add ( or "steamid" ) 
 
