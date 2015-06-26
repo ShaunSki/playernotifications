@@ -7,8 +7,8 @@ AddCSLuaFile( "sh_config.lua" )
 include( "cl_playernotifications.lua" )
 include( "sh_config.lua" )
 
-resource.AddFile( JoinSound ) -- Automatic Download on path change.
-resource.AddFile( LeaveSound ) -- Automatic Download on path change.
+resource.AddFile( JoinSoundFile ) -- Automatic Download on path change.
+resource.AddFile( LeaveSoundFile ) -- Automatic Download on path change.
 
 -- A player has spawned! Call this function!
 function PlayerSpawned( ply )
