@@ -15,10 +15,10 @@ function PlayerJoins( ply )
 	for _, ply in ipairs( player.GetAll() ) do
 	
 	if JoinConfig == true and TeamColorConfig == true then return
-		chat.AddText( TagColor, TagName, TeamColor, Name, TextColor, JoinText )
+		chat.AddText( TagColor, TagName, TeamColor, Name, TextColor, JoinText, " [SteamID: " .. ply:SteamID() .. "]" )
 	elseif 
 	JoinConfig == true and TeamColorConfig == false then return
-		chat.AddText( TagColor, TagName, NameColor, Name, TextColor, JoinText )
+		chat.AddText( TagColor, TagName, NameColor, Name, TextColor, JoinText, " [SteamID: " .. ply:SteamID() .. "]" )
 	end
 	if EnablePlayerJoinSound == true then
 		surface.PlaySound( JoinSound )
@@ -55,10 +55,10 @@ function PlayerUserGroupJoins( ply )
 	for _, ply in ipairs( player.GetAll() ) do
 
 	if UserGroupConfig == true and UserGroupTeamColorConfig == true and ply:IsUserGroup( UserGroupJoin ) then return
-		chat.AddText( UserGroupTagColor, UserGroupTagName, UserGroupNameColor, Name, UserGroupTextColor, UserGroupJoinText )
+		chat.AddText( UserGroupTagColor, UserGroupTagName, UserGroupNameColor, Name, UserGroupTextColor, UserGroupJoinText, " [SteamID: " .. ply:SteamID() .. "]" )
 	elseif
 	UserGroupConfig == true and UserGroupTeamColorConfig == false and ply:IsUserGroup( UserGroupJoin ) then return
-		chat.AddText( UserGroupTagColor, UserGroupTagName, TeamColor, Name, UserGroupTextColor, UserGroupJoinText )
+		chat.AddText( UserGroupTagColor, UserGroupTagName, TeamColor, Name, UserGroupTextColor, UserGroupJoinText, " [SteamID: " .. ply:SteamID() .. "]" )
 	end
 	if EnablePlayerJoinSound == true then
 		surface.PlaySound( JoinSound )
@@ -75,10 +75,10 @@ function PlayerLeft( ply )
 	for _, ply in ipairs( player.GetAll() ) do
 
 	if LeaveConfig == true and LeaveTeamColorConfig == false then return
-		chat.AddText( TagLeaveColor, TagLeaveName, NameLeaveColor, Name, TextLeaveColor, LeaveText )
+		chat.AddText( TagLeaveColor, TagLeaveName, NameLeaveColor, Name, TextLeaveColor, LeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	elseif
 	LeaveConfig == true and LeaveTeamColorConfig == true then return
-		chat.AddText( TagLeaveColor, TagLeaveName, TeamColor, Name, TextLeaveColor, LeaveText )
+		chat.AddText( TagLeaveColor, TagLeaveName, TeamColor, Name, TextLeaveColor, LeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	end
 	if EnablePlayerLeaveSound == true then
 		surface.PlaySound( LeaveSound )
@@ -95,10 +95,10 @@ function PlayerSteamIDLeft( ply )
 	for _, ply in ipairs( player.GetAll() ) do
 
 	if SteamIDJoinConfig == true and SteamIDTeamColorConfig == false and ply:SteamID() == ( SteamIDJoin ) then return
-		chat.AddText( SteamIDNameLeaveColor, SteamIDTagName, SteamIDNameLeaveColor, Name, SteamIDTextLeaveColor, SteamIDLeaveText )
+		chat.AddText( SteamIDNameLeaveColor, SteamIDTagName, SteamIDNameLeaveColor, Name, SteamIDTextLeaveColor, SteamIDLeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	elseif
 	SteamIDJoinConfig == true and SteamIDTeamColorConfig == true and ply:SteamID() == ( SteamIDJoin ) then return
-		chat.AddText( SteamIDNameLeaveColor, SteamIDTagName, TeamColor, Name, SteamIDTextLeaveColor, SteamIDLeaveText )
+		chat.AddText( SteamIDNameLeaveColor, SteamIDTagName, TeamColor, Name, SteamIDTextLeaveColor, SteamIDLeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	end
 	if EnablePlayerLeaveSound == true then
 		surface.PlaySound( LeaveSound )
@@ -115,10 +115,10 @@ function PlayerUserGroupLeft( ply )
 	for _, ply in ipairs( player.GetAll() ) do
 
 	if UserGroupConfig == true and UserGroupTeamColorConfig == true and ply:IsUserGroup( UserGroupJoin ) then return
-		chat.AddText( UserGroupTagColor, UserGroupTagName, UserGroupNameLeaveColor, Name, UserGroupTextLeaveColor, UserGroupLeaveText )
+		chat.AddText( UserGroupTagColor, UserGroupTagName, UserGroupNameLeaveColor, Name, UserGroupTextLeaveColor, UserGroupLeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	elseif
 	UserGroupConfig == true and UserGroupTeamColorConfig == false and ply:IsUserGroup( UserGroupJoin ) then return
-		chat.AddText( UserGroupTagColor, UserGroupTagName, TeamColor, Name, UserGroupTextLeaveColor, UserGroupLeaveText )
+		chat.AddText( UserGroupTagColor, UserGroupTagName, TeamColor, Name, UserGroupTextLeaveColor, UserGroupLeaveText, " [SteamID: " .. ply:SteamID() .. "]" )
 	end
 	if EnablePlayerLeaveSound == true then
 		surface.PlaySound( LeaveSound )

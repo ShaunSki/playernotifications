@@ -14,7 +14,7 @@ TagColor = Color( 0, 255, 0 ) -- The Tag Color!
 
 NameColor = Color( 255, 0, 0 ) -- The player names color! / If TeamColorConfig = true , then it doesn't matter what NameColor is.
 TextColor = Color( 255, 255, 255 ) -- The player names text color! -- best to leave as white...
-JoinText = " has joined the server!" -- The text when a player joins!
+JoinText = " has joined the server! " -- The text when a player joins!
 
 -- Player Left Config
 LeaveConfig = true -- This will show notifications of people who leave. To turn off use false. To turn on use true.
@@ -25,7 +25,7 @@ TagLeaveColor = TagColor -- Uses line 12. To change it differently e.g. use Colo
 
 NameLeaveColor = Color( 255, 0, 0 ) --  The player names color!
 TextLeaveColor = Color( 255, 255, 255 ) -- The player names text color! -- best to leave as white...
-LeaveText = " has left the server!" -- The text when a player leaves!
+LeaveText = " has left the server! " -- The text when a player leaves!
 
 -- Timer Join Config
 -- When a player joins should it instantly show they connected or have a delay?
@@ -48,6 +48,7 @@ LeaveSoundFile = "" -- Your sound path e.g. garrysmod/garrysmod/sound. "If the u
 -------------------------FEEL FREE TO USE IT THOUGH--------------------------
 ------------------------I MEAN I SPENT TIME MAKING IT------------------------
 ------IF U WANT A SOUND FOR WHEN USERGROUP/STEAMID JOIN THEN MESSAGE ME------
+-------OR IF YOU WANT MORE CONFIG FOR DIFFERENT STEAMID OR USERGROUPS!-------
 -----------------------------------------------------------------------------
 
 -- SteamID Config
@@ -94,4 +95,4 @@ UserGroupTextColor = Color( 255, 255, 255 ) -- The player names text color! -- b
 UserGroupNameLeaveColor = Color( 255, 0, 0 ) --  The player names color!
 UserGroupTextLeaveColor = Color( 255, 255, 255 ) -- The player names text color! -- best to leave as white...
 
-UserGroupLeaveText = " has left the server!" -- The text when a player in the UserGroup Leaves.
+UserGroupLeaveText = " has left the server! " -- The text when a player in the UserGroup Leaves.
