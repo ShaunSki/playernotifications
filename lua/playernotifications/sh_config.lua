@@ -55,7 +55,7 @@ LeaveSoundFile = "" -- Your sound path e.g. garrysmod/garrysmod/sound. "If the u
 SteamIDJoinConfig = false -- This will show players by SteamID, e.g. instead of using above uses this. (FOR THE PLAYER STEAMID)
 SteamIDTeamColorConfig = false -- This will show players teamcolor by SteamID upon joining. E.G. TRUE means it uses SteamIDTextColor! To turn off use false. To Turn on use true.
 
-SteamIDJoin = "STEAM_0:0:27660669" -- The player names SteamID (Need this for it to work). If you want multiple then just ask me. or add ( or "steamid" ) 
+SteamIDJoin = "STEAM_0:0:62548" -- The player names SteamID (Need this for it to work). If you want multiple then just ask me. or add ( or "steamid" ) 
 
 SteamIDTagName = "[Owner] " -- The tag e.g. [Owner] "name" the owner, has arrived.
 
@@ -66,11 +66,12 @@ SteamIDTextColor = Color( 255, 255, 255 ) -- The player names text color! -- bes
 SteamIDJoinText = " the owner, has arrived." -- The text when a player joins! thru SteamID...
 -- type status in console to retrieve your SteamID and throw it in there.
 
--- UserGroups Leave Config
+-- SteamID Leave Config
 SteamIDNameLeaveColor = Color( 255, 0, 0 ) --  The player names color!
 SteamIDTextLeaveColor = Color( 255, 255, 255 ) -- The player names text color! -- best to leave as white...
 
-SteamIDLeaveText = " has left the server!" -- The text when a player leaves!
+-- Disabled For Now -- (not working - only the leavetext)
+--SteamIDLeaveText = " the owner, has left the server!" -- The text when a player leaves!
 
 -- UserGroups Config
 -- UserGroups Join Config
@@ -86,7 +87,8 @@ UserGroupTagColor = Color( 150, 150, 0 ) -- The Tag Color / If EnablePlayerSteam
 UserGroupNameColor = Color( 50, 0, 50 ) -- The player names color!
 UserGroupTextColor = Color( 255, 255, 255 ) -- The player names text color! -- best to leave as white...
 
-UserGroupJoinText = " has joined the server!" -- The text when a player in the usergroup joins.
+-- Disabled For Now -- (not working - only the leavetext)
+--UserGroupJoinText = " has joined the server!" -- The text when a player in the usergroup joins.
 
 -- UserGroups Leave Config
 UserGroupNameLeaveColor = Color( 255, 0, 0 ) --  The player names color!

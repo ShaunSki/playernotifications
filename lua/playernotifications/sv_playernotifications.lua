@@ -12,9 +12,24 @@ resource.AddFile( LeaveSoundFile ) -- Automatic Download on path change.
 
 -- A player has spawned! Call this function!
 function PlayerSpawned( ply )
+ply.PlayersName = ply:Nick()
+ply.TeamColor = ply:Team()
+		
+if ply:SteamID() == ( SteamIDJoin ) then return 
 	timer.Create( "Timer", JoinTimeDelay, 1, function()
-		ply.PlayersName = ply:Nick()
-		ply.TeamColor = ply:Team()
+		umsg.Start( "PlayerSteamIDJoins" )
+		umsg.String( ply.PlayersName )
+		umsg.End()
+	end	)
+end
+if ply:IsUserGroup( UserGroupJoin ) then return
+	timer.Create( "TimerUserGroupJoin", JoinTimeDelay, 1, function()
+		umsg.Start( "PlayerUserGroupJoins" )
+		umsg.String( ply.PlayersName )
+		umsg.End()
+	end )
+end
+	timer.Create( "TimerSteamID", JoinTimeDelay, 1, function()
 		umsg.Start( "PlayerJoins" )
 		umsg.String( ply.PlayersName )
 		umsg.End()
@@ -26,7 +41,7 @@ hook.Add( "PlayerInitialSpawn", "PlayerSpawned", PlayerSpawned )
 function PlayerLeaves( ply )
 	ply.PlayersName = ply:Nick()
 	ply.TeamColor = ply:Team()
-		umsg.Start( "PlayerLeft" )
+		umsg.Start( "PlayerLeft" ) 
 		umsg.String( ply.PlayersName )
 		umsg.End()
 end
